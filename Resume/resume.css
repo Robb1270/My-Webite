@@ -1,0 +1,67 @@
+
+img{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  /* opacity: 0.8; */
+  border-radius: 50%;
+  border: 2px solid rgb(235, 244, 239);
+}
+/* Container holding the image and the text */
+.container {
+    position: relative;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+/* Bottom right text */
+.text-block {
+    position: fixed;
+    top:32%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    z-index: 100;
+    text-shadow: 1px 1px rgb(32, 42, 36);
+}
+
+
+
+
+
+/* Nav Bar */
+
+.mainHeader{
+  background-color: #333;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.mainHeader a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.mainHeader a:hover {
+  background: #ddd;
+  color: black;
+}
+
+body{
+  background-image: url('https://images.unsplash.com/photo-1491900177661-4e1cd2d7cce2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0e5f7a670b5cd3ff8bbc7b21ef4e4461&auto=format&fit=crop&w=1500&q=80');
+  background-size: cover;
+}
+
+
+/* Contact Part */

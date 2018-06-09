@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Text Game</title>
+    <link rel="stylesheet" href="textGame.css"/>
+  </head>
+  <body>
+
+    <div id = 'controls'>
+    <button onclick="north()" style="display:block">North</button>
+
+    <button onclick="west()">West</button>
+    <button onclick="east()">East</button>
+
+    <button onclick="south()" style="display:block">South</button>
+    </div>
+
+    <div id = 'location'>
+      <h4 id = 'xPrint'>X:</h4>
+      <h4 id = 'yPrint'>Y:</h4>
+    </div>
+
+    <table id = 'map'>
+
+
+      <tr id = 'row9'>
+          <td id = Y9X1></td>
+          <td id = Y9X2></td>
+          <td id = Y9X3></td>
+          <td id = Y9X4></td>
+          <td id = Y9X5></td>
+          <td id = Y9X6></td>
+          <td id = Y9X7></td>
+          <td id = Y9X8></td>
+          <td id = Y9X9></td>
+          <td id = Y9X10></td>
+          <td id = Y9X11></td>
+          <td id = Y9X12></td>
+          <td id = Y9X13></td>
+          <td id = Y9X14></td>
+          <td id = Y9X15></td>
+          <td id = Y9X16></td>
+          <td id = Y9X17></td>
+          <td id = Y9X18></td>
+          <td id = Y9X19></td>
+          <td id = Y9X20></td>
+          <td id = Y9X21></td>
+          <td id = Y9X22></td>
+          <td id = Y9X23></td>
+          <td id = Y9X24></td>
+          <td id = Y9X25></td>
+          <td id = Y9X26></td>
+          <td id = Y9X27></td>
+          <td id = Y9X28></td>
+      </tr>
+
+      <tr id = 'row8'>
+          <td id = Y8X1></td>
+          <td id = Y8X2></td>
+          <td id = Y8X3></td>
+          <td id = Y8X4></td>
+          <td id = Y8X5></td>
+          <td id = Y8X6></td>
+          <td id = Y8X7></td>
+          <td id = Y8X8></td>
+          <td id = Y8X9></td>
+          <td id = Y8X10></td>
+          <td id = Y8X11></td>
+          <td id = Y8X12></td>
+          <td id = Y8X13></td>
+          <td id = Y8X14></td>
+          <td id = Y8X15></td>
+          <td id = Y8X16></td>
+          <td id = Y8X17></td>
+          <td id = Y8X18></td>
+          <td id = Y8X19></td>
+          <td id = Y8X20></td>
+          <td id = Y8X21></td>
+          <td id = Y8X22></td>
+          <td id = Y8X23></td>
+          <td id = Y8X24></td>
+          <td id = Y8X25></td>
+          <td id = Y8X26></td>
+          <td id = Y8X27></td>
+          <td id = Y8X28></td>
+      </tr>
+
+      <tr id = 'row7'>
+        <td id = Y7X1></td>
+        <td id = Y7X2></td>
+        <td id = Y7X3></td>
+        <td id = Y7X4></td>
+        <td id = Y7X5></td>
+        <td id = Y7X6></td>
+        <td id = Y7X7></td>
+        <td id = Y7X8></td>
+        <td id = Y7X9></td>
+        <td id = Y7X10></td>
+        <td id = Y7X11></td>
+        <td id = Y7X12></td>
+        <td id = Y7X13></td>
+        <td id = Y7X14></td>
+        <td id = Y7X15></td>
+        <td id = Y7X16></td>
+        <td id = Y7X17></td>
+        <td id = Y7X18></td>
+        <td id = Y7X19></td>
+        <td id = Y7X20></td>
+        <td id = Y7X21></td>
+        <td id = Y7X22></td>
+        <td id = Y7X23></td>
+        <td id = Y7X24></td>
+        <td id = Y7X25></td>
+        <td id = Y7X26></td>
+        <td id = Y7X27></td>
+        <td id = Y7X28></td>
+      </tr>
+
+      <tr id = 'row6'>
+        <td id = Y6X1></td>
+        <td id = Y6X2></td>
+        <td id = Y6X3></td>
+        <td id = Y6X4></td>
+        <td id = Y6X5></td>
+        <td id = Y6X6></td>
+        <td id = Y6X7></td>
+        <td id = Y6X8></td>
+        <td id = Y6X9></td>
+        <td id = Y6X10></td>
+        <td id = Y6X11></td>
+        <td id = Y6X12></td>
+        <td id = Y6X13></td>
+        <td id = Y6X14></td>
+        <td id = Y6X15></td>
+        <td id = Y6X16></td>
+        <td id = Y6X17></td>
+        <td id = Y6X18></td>
+        <td id = Y6X19></td>
+        <td id = Y6X20></td>
+        <td id = Y6X21></td>
+        <td id = Y6X22></td>
+        <td id = Y6X23></td>
+        <td id = Y6X24></td>
+        <td id = Y6X25></td>
+        <td id = Y6X26></td>
+        <td id = Y6X27></td>
+        <td id = Y6X28></td>
+      </tr>
+
+      <tr id = 'row5'>
+        <td id = Y5X1 class = 'start'></td>
+        <td id = Y5X2></td>
+        <td id = Y5X3></td>
+        <td id = Y5X4></td>
+        <td id = Y5X5></td>
+        <td id = Y5X6></td>
+        <td id = Y5X7></td>
+        <td id = Y5X8></td>
+        <td id = Y5X9></td>
+        <td id = Y5X10></td>
+        <td id = Y5X11></td>
+        <td id = Y5X12></td>
+        <td id = Y5X13></td>
+        <td id = Y5X14></td>
+        <td id = Y5X15></td>
+        <td id = Y5X16></td>
+        <td id = Y5X17></td>
+        <td id = Y5X18></td>
+        <td id = Y5X19></td>
+        <td id = Y5X20></td>
+        <td id = Y5X21></td>
+        <td id = Y5X22></td>
+        <td id = Y5X23></td>
+        <td id = Y5X24></td>
+        <td id = Y5X25></td>
+        <td id = Y5X26></td>
+        <td id = Y5X27></td>
+        <td id = Y5X28></td>
+      </tr>
+
+      <tr id = 'row4'>
+        <td id = Y4X1></td>
+        <td id = Y4X2></td>
+        <td id = Y4X3></td>
+        <td id = Y4X4></td>
+        <td id = Y4X5></td>
+        <td id = Y4X6></td>
+        <td id = Y4X7></td>
+        <td id = Y4X8></td>
+        <td id = Y4X9></td>
+        <td id = Y4X10></td>
+        <td id = Y4X11></td>
+        <td id = Y4X12></td>
+        <td id = Y4X13></td>
+        <td id = Y4X14></td>
+        <td id = Y4X15></td>
+        <td id = Y4X16></td>
+        <td id = Y4X17></td>
+        <td id = Y4X18></td>
+        <td id = Y4X19></td>
+        <td id = Y4X20></td>
+        <td id = Y4X21></td>
+        <td id = Y4X22></td>
+        <td id = Y4X23></td>
+        <td id = Y4X24></td>
+        <td id = Y4X25></td>
+        <td id = Y4X26></td>
+        <td id = Y4X27></td>
+        <td id = Y4X28></td>
+      </tr>
+
+      <tr id = 'row3'>
+        <td id = Y3X1></td>
+        <td id = Y3X2></td>
+        <td id = Y3X3></td>
+        <td id = Y3X4></td>
+        <td id = Y3X5></td>
+        <td id = Y3X6></td>
+        <td id = Y3X7></td>
+        <td id = Y3X8></td>
+        <td id = Y3X9></td>
+        <td id = Y3X10></td>
+        <td id = Y3X11></td>
+        <td id = Y3X12></td>
+        <td id = Y3X13></td>
+        <td id = Y3X14></td>
+        <td id = Y3X15></td>
+        <td id = Y3X16></td>
+        <td id = Y3X17></td>
+        <td id = Y3X18></td>
+        <td id = Y3X19></td>
+        <td id = Y3X20></td>
+        <td id = Y3X21></td>
+        <td id = Y3X22></td>
+        <td id = Y3X23></td>
+        <td id = Y3X24></td>
+        <td id = Y3X25></td>
+        <td id = Y3X26></td>
+        <td id = Y3X27></td>
+        <td id = Y3X28></td>
+      </tr>
+
+      <tr id = 'row2'>
+        <td id = Y2X1></td>
+        <td id = Y2X2></td>
+        <td id = Y2X3></td>
+        <td id = Y2X4></td>
+        <td id = Y2X5></td>
+        <td id = Y2X6></td>
+        <td id = Y2X7></td>
+        <td id = Y2X8></td>
+        <td id = Y2X9></td>
+        <td id = Y2X10></td>
+        <td id = Y2X11></td>
+        <td id = Y2X12></td>
+        <td id = Y2X13></td>
+        <td id = Y2X14></td>
+        <td id = Y2X15></td>
+        <td id = Y2X16></td>
+        <td id = Y2X17></td>
+        <td id = Y2X18></td>
+        <td id = Y2X19></td>
+        <td id = Y2X20></td>
+        <td id = Y2X21></td>
+        <td id = Y2X22></td>
+        <td id = Y2X23></td>
+        <td id = Y2X24></td>
+        <td id = Y2X25></td>
+        <td id = Y2X26></td>
+        <td id = Y2X27></td>
+        <td id = Y2X28></td>
+      </tr>
+
+      <tr id = 'row1'>
+        <td id = Y1X1></td>
+        <td id = Y1X2></td>
+        <td id = Y1X3></td>
+        <td id = Y1X4></td>
+        <td id = Y1X5></td>
+        <td id = Y1X6></td>
+        <td id = Y1X7></td>
+        <td id = Y1X8></td>
+        <td id = Y1X9></td>
+        <td id = Y1X10></td>
+        <td id = Y1X11></td>
+        <td id = Y1X12></td>
+        <td id = Y1X13></td>
+        <td id = Y1X14></td>
+        <td id = Y1X15></td>
+        <td id = Y1X16></td>
+        <td id = Y1X17></td>
+        <td id = Y1X18></td>
+        <td id = Y1X19></td>
+        <td id = Y1X20></td>
+        <td id = Y1X21></td>
+        <td id = Y1X22></td>
+        <td id = Y1X23></td>
+        <td id = Y1X24></td>
+        <td id = Y1X25></td>
+        <td id = Y1X26></td>
+        <td id = Y1X27></td>
+        <td id = Y1X28></td>
+      </tr>
+
+    </table>
+
+  <body onkeydown='getKeyAndMove(event)'>
+  <script src="textGame.js"> </script>
+  </body>
+</html>

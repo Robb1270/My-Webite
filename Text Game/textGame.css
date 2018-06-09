@@ -1,0 +1,15 @@
+
+td {
+  border: 1px solid black;
+  height: 50px;
+  width: 50px;
+  padding: 0px;
+  margin: 0px;
+  background-color: rgb(230, 229, 232);
+}
+tr {
+  border-top: 3213px solid black;
+}
+.start {
+  background-color: rgba(143, 210, 123, 0.34)
+}

@@ -1,0 +1,131 @@
+html,body {
+  padding:0;
+  margin:0;
+  font-family: fantasy;
+}
+
+.mainHeader{
+  background-color: #333;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+.mainHeader a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.mainHeader a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.mainUl {
+  padding-bottom: 50px;
+
+}
+
+/*=========
+  Display pictues side by side
+=========*/
+.row {
+  display: flex;
+  padding-bottom: 50px;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+  opacity: 0.2;
+}
+
+.column:hover {
+  opacity: 1;
+}
+
+.openPar {
+  padding: 10px 0px 30px 0px;
+  text-align: center;
+}
+
+.mainBody{
+  padding: 16px;
+  margin-top: 40px;
+  background-color: rgba(123, 166, 152, 0.29);
+}
+
+.container {
+  width: 70% ;
+  margin:auto;
+}
+
+.mainFooter{
+  text-align: center;
+  background-color: #333;
+  color: #f2f2f2;
+}
+
+#map {
+  width: 75%;
+  height: 400px;
+  margin: auto;
+  margin-bottom: 60px;
+}
+
+/*===========
+  Scroll Bar Stlye
+===========*/
+::-webkit-scrollbar {
+    width: 20px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(59, 86, 147);
+    border-radius: 10px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(69, 79, 128);
+}
+#spinner:hover {
+  animation-name: spinner;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  transform-style: preserve-3d;
+  text-align:center;
+}
+@keyframes spinner {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(-360deg);
+  }
+}
+/*Resume table */
+
+table {
+  border-collapse: collapse;
+  margin-bottom: 60px;
+}
+
+td, th{
+  border: 2px solid black;
+}
+
+td:hover {
+  opacity: 1;
+  background-color: rgba(181, 174, 168, 0.4);
+
+}
