@@ -7,19 +7,35 @@
   </head>
   <body>
 
-    <div id = 'controls'>
-    <button onclick="north()" style="display:block">North</button>
+    <header = class = 'mainHeader'>
+        <div id = 'controls'>
+        <button onclick="north()">North</button>
+        <button onclick="west()">West</button>
+        <button onclick="east()">East</button>
+        <button onclick="south()">South</button>
+        </div>
+        <div id = 'location'>
+          <h4 id = 'xPrint'>X:</h4>
+          <h4 id = 'yPrint'>Y:</h4>
+        </div>
+        <div id = 'stats'>
+          <table>
+            <tr>
+              <thead>Statistics</thead>
+            </tr>
+            <tr>
+              <td>Score</td>
+              <td id = 'scoreHTML'>0</td>
+            </tr>
+            <tr>
+              <td>Health</td>
+              <td id = 'healthHTML'>100</td>
+            </tr>
 
-    <button onclick="west()">West</button>
-    <button onclick="east()">East</button>
+          </table>
 
-    <button onclick="south()" style="display:block">South</button>
-    </div>
-
-    <div id = 'location'>
-      <h4 id = 'xPrint'>X:</h4>
-      <h4 id = 'yPrint'>Y:</h4>
-    </div>
+        </div>
+    </header>
 
     <table id = 'map'>
 
@@ -149,7 +165,7 @@
       </tr>
 
       <tr id = 'row5'>
-        <td id = Y5X1 class = 'start'></td>
+        <td id = Y5X1 class = 'start'>=></td>
         <td id = Y5X2></td>
         <td id = Y5X3></td>
         <td id = Y5X4></td>
@@ -304,6 +320,8 @@
       </tr>
 
     </table>
+
+    <footer>Created by <a href="file:///Users/Robby/Documents/Code/1%20AAA%20My%20Webite/Main/main.html" target="_blank">Rob Anderson ©2018</a></footer>
 
   <body onkeydown='getKeyAndMove(event)'>
   <script src="textGame.js"> </script>

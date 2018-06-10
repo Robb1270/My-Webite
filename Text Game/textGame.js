@@ -57,29 +57,75 @@ function east() {
     xPrint.innerHTML = 'X: ' + x;
     yPrint.innerHTML = 'Y: ' + y;
     moveSprite();
+		prizeCheck();
+		bombCheck()
+		scoreCheck()
   }
 function west() {
     x = x -1;
     xPrint.innerHTML = 'X: ' + x;
     yPrint.innerHTML = 'Y: ' + y;
     moveSprite();
+		prizeCheck();
+		bombCheck()
+		scoreCheck()
   }
 function north() {
     y = y + 1;
     xPrint.innerHTML = 'X: ' + x;
     yPrint.innerHTML = 'Y: ' + y;
     moveSprite();
+		prizeCheck();
+		bombCheck()
+		scoreCheck()
   }
 function south() {
     y = y - 1;
     xPrint.innerHTML = 'X: ' + x;
     yPrint.innerHTML = 'Y: ' + y;
     moveSprite();
+		prizeCheck();
+		bombCheck()
+		scoreCheck()
   }
 
 
-var prizeCell = document.getElementById('Y7X4');
-var prizeImg = document.createElement('img');
-prizeImg.setAttribute('src', 'http://www.freepngimg.com/download/award/27300-5-award-free-download.png');
-prizeImg.setAttribute('width', '40px');
-prizeImg.setAttribute('height', '40px');
+/************* Scored and Health Meters & Check for items ie hitting bombs or
+getting prizes & reload page on win/lose **********************************/
+var score = 0;
+var health = 100;
+
+const scoreHTML = document.getElementById('scoreHTML');
+const healthHTML = document.getElementById('healthHTML');
+
+function prizeCheck() {
+	if(x==4 && y ==7 || x==5 && y==9 || x==20 && y==7 || x==15 && y==2 || x==19 && y==5 || x==6 && y==8 || x==16 && y==4) {
+		alert('You found a trophy!');
+		score += 10;
+	}
+}
+
+function bombCheck() {
+	if (x==1 && y==2 || x==18 && y==3 || x==18 && y==9 || x==13 && y==2 || x==3 && y==7 || x==14 && y==6 || x==17 && y==7) {
+		alert('You hit the bomb!')
+		health -= 10;
+	}
+}
+
+function scoreCheck() {
+	scoreHTML.innerHTML = score;
+	healthHTML.innerHTML = health;
+
+	if(score >= 100) {
+		alert('You Win!!')
+		reloadPage();
+	}
+	else if(health <= 0) {
+		alert('You Lose! :( \nPlease Play Again')
+		reloadPage();
+	}
+}
+
+function reloadPage() {
+		window.location.reload(true);
+}

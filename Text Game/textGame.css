@@ -1,15 +1,57 @@
 
-td {
-  border: 1px solid black;
-  height: 50px;
-  width: 50px;
+#map td{
+  /* border: 1px solid black; */
+  height: 110px;
+  width: 110px;
   padding: 0px;
   margin: 0px;
   background-color: rgb(230, 229, 232);
 }
-tr {
-  border-top: 3213px solid black;
-}
+
 .start {
-  background-color: rgba(143, 210, 123, 0.34)
+  background-color: rgba(143, 210, 123, 0.34);
+  font-size: 50px;
+}
+.mainHeader{
+  background-color: #333;
+  overflow: hidden;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  height: 300px;
+}
+#controls {
+  padding-right: 20px;
+  padding-top: 20px;
+  float: right;
+}
+
+#location {
+  padding-top: 40px;
+  float: right;
+  color: white;
+  margin-right: none;
+}
+
+#stats{
+  color: white;
+  float: left;
+  font-size: 50px;
+  text-align: justify;
+}
+
+footer{
+   bottom:0;
+   width:100%;
+   height:50px;   /* Height of the footer */
+   background:#6cf;
+   font-size: 35px;
+   font-weight: bold;
+}
+
+table#map td.bomb {
+  background-image: url('https://image.freepik.com/free-icon/round-bomb-outline_318-35017.jpg');
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
