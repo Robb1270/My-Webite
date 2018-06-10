@@ -1,13 +1,11 @@
-
 #map td{
   /* border: 1px solid black; */
-  height: 110px;
-  width: 110px;
+  height: 108px;
+  width: 108px;
   padding: 0px;
   margin: 0px;
   background-color: rgb(230, 229, 232);
 }
-
 .start {
   background-color: rgba(143, 210, 123, 0.34);
   font-size: 50px;
@@ -17,7 +15,7 @@
   overflow: hidden;
   top: 0;
   width: 100%;
-  z-index: 9999;
+  z-index: 2;
   height: 300px;
 }
 #controls {
@@ -25,21 +23,18 @@
   padding-top: 20px;
   float: right;
 }
-
 #location {
   padding-top: 40px;
   float: right;
   color: white;
   margin-right: none;
 }
-
 #stats{
   color: white;
   float: left;
   font-size: 50px;
   text-align: justify;
 }
-
 footer{
    bottom:0;
    width:100%;
@@ -48,7 +43,6 @@ footer{
    font-size: 35px;
    font-weight: bold;
 }
-
 table#map td.bomb {
   background-image: url('https://image.freepik.com/free-icon/round-bomb-outline_318-35017.jpg');
   background-size: 100%;
